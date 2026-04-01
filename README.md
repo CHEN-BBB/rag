@@ -1,161 +1,477 @@
-# 基于RAG的汽车知识问答系统
+# 吉利汽车智能问答系统（RAG with Chat）
 
-## 1、介绍
+> 基于检索增强生成（RAG）技术的汽车用户手册智能问答系统，融合四路召回 + 重排序 + 大语言模型，为用户提供精准的汽车知识问答服务。
 
-本项目属于大模型 RAG 任务，使用现有的车主手册构建知识库，然后选择知识库中的相关知识用于辅助大模型生成。整个方案的构建流程主要分为三大部分：构建知识库、知识检索、答案生成。该项目主要结合了 LLM、Langchain、提示工程、优化知识库结构和检索生成流程、vllm 推理优化框架等技术。
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-orange.svg)
+![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)
 
-## 2、下载源码与环境安装（Linux）
+---
+
+## 目录
+
+- [项目简介](#项目简介)
+- [系统架构](#系统架构)
+- [环境要求](#环境要求)
+- [安装步骤](#安装步骤)
+- [模型准备](#模型准备)
+- [快速开始](#快速开始)
+- [使用示例](#使用示例)
+- [参数说明](#参数说明)
+- [评估指标](#评估指标)
+- [Docker 部署](#docker-部署)
+- [项目结构](#项目结构)
+- [常见问题](#常见问题)
+
+---
+
+## 项目简介
+
+本项目以**吉利控股集团汽车用户手册**为知识库，构建了一套完整的 RAG（Retrieval-Augmented Generation）知识问答系统。系统通过以下核心技术实现精准问答：
+
+- **四路并行召回**：M3E（稠密语义）、BGE（稠密语义）、BM25（稀疏关键词）、TF-IDF（稀疏关键词）
+- **两阶段检索**：Bi-Encoder 粗排召回 → Cross-Encoder 精排重排
+- **双 LLM 路径**：支持本地 HuggingFace 模型推理 & 云端 API 调用
+- **Prompt 增强**：利用 LLM 对用户问题进行查询扩展，提升召回质量
+- **多维评估**：语义相似度 + 关键词匹配综合打分
+
+---
+
+## 系统架构
 
 ```
-# 下载源码
-git clone https://github.com/zhangzg1/rag_with_chat.git
+用户问题
+    │
+    ▼
+[Prompt 增强] ──(LLM Query 扩展)──────────────────────────┐
+    │                                                      │
+    ▼                                                      │
+[四路并行召回 Top-15/路]                                    │
+  ├── M3E Retriever  (FAISS 稠密向量)                      │
+  ├── BGE Retriever  (FAISS 稠密向量)                      │
+  ├── BM25 Retriever (稀疏关键词)                          │
+  └── TF-IDF Retriever (稀疏关键词)                        │
+    │                                                      │
+    ▼                                                      │
+[Cross-Encoder 重排序 → Top-6]                             │
+  ├── BCE Reranker                                         │
+  └── BGE Reranker                                         │
+    │                                                      │
+    ▼                                                      │
+[5路 Prompt 构建 → Batch LLM 推理]                         │
+  ├── 多路重排结果 (answer_1) ◄──────────────────────────── ┘
+  ├── M3E 单路结果 (answer_2)
+  ├── BGE 单路结果 (answer_3)
+  ├── BM25 单路结果 (answer_4)
+  └── TF-IDF 单路结果 (answer_5)
+    │
+    ▼
+[结果保存 + 评估打分]
+```
+
+---
+
+## 环境要求
+
+| 组件 | 版本要求 |
+|------|---------|
+| Python | 3.9+ |
+| PyTorch | 2.1+（根据 CUDA 版本选择） |
+| CUDA | 11.8 / 12.1（推荐，可使用 CPU 但速度较慢） |
+| GPU 显存 | 本地模式建议 ≥ 16GB；API 模式无 GPU 要求 |
+| 内存 | ≥ 16GB |
+
+---
+
+## 安装步骤
+
+### 1. 克隆项目
+
+```bash
+git clone https://github.com/your-repo/rag_with_chat.git
 cd rag_with_chat
+```
 
-# 创建虚拟环境
-conda create -n rag_with_chat python=3.9
-conda activate rag_with_chat
+### 2. 创建虚拟环境（推荐）
 
-# 安装其他依赖包
+```bash
+# 使用 conda
+conda create -n rag_chat python=3.9
+conda activate rag_chat
+
+# 或使用 venv
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# Linux/macOS
+source .venv/bin/activate
+```
+
+### 3. 安装 PyTorch
+
+> 请根据你的 CUDA 版本选择对应的安装命令，参考 [PyTorch 官网](https://pytorch.org/get-started/locally/)
+
+```bash
+# CUDA 11.8
+pip install torch==2.1.2 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# CUDA 12.1
+pip install torch==2.1.2 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# CPU Only（速度较慢）
+pip install torch==2.1.2 torchvision torchaudio
+```
+
+### 4. 安装其他依赖
+
+```bash
 pip install -r requirements.txt
-
-# 选择docker容器化部署（需要先将模型下载到本地）
-docker build -t rag_with_chat:latest .
 ```
 
-## 3、代码结构
+### 5. 配置环境变量（API 模式必须）
 
-```text
-.
-├── benchmark
-    └── bench_data.json              # 基准测试数据
-    └── benchmark.py                 # 基座测试
-    └── model_server.py              # 模型服务
-├── data
-    └── gold_result.jsonn            # 标准答案数据集     
-    └── test_question.json           # 测试数据集 
-    └── car_user_manual.pdf          # 汽车用户手册文件
-├── images 
-├── models                           # 基座大语言模型
-    └── Baichuan2-7B-Chat        
-    └── chatglm3-6b
-    └── Qwen2-7B-Instruct        
-├── pre_train_model 
-    └── bce-reranker-base_v1         # bce重排序模型
-    └── bge-reranker-large           # bge重排序模型 
-    └── bge-m3                       # bge文本嵌入模型
-    └── m3e-large                    # m3e文本嵌入模型 
-    └── text2vec-base-chinese        # 相似度模型     
-├── retriever
-    └── bge_retriever.py             # bge召回    
-    └── bm25_retriever.py            # bm25召回      
-    └── m3e_retriever.py             # m3e召回
-    └── tfidf_retriever.py           # tf-idf召回
-├── .env                             # API 密钥
-├── config.py                        # 配置文件
-├── pdf_parse.py                     # pdf文档解析器
-├── rerank_model.py                  # 重排序逻辑
-├── generate_answer.py               # rag流程
-├── chatgpt_proxy.py                 # chatgpt代理
-├── vllm_model.py                    # vllm大模型加速
-├── test_score.py                    # 测试集得分计算
-├── example_test.py                  # 测试样例
-├── run.py                           # 主函数
-├── requirements.txt                 # 第三方依赖库
-├── README.md                        # 说明文档             
+如需使用 HuggingFace API 调用云端大模型，在项目根目录创建 `.env` 文件：
+
+```bash
+# .env
+HF_TOKEN=your_huggingface_token_here
 ```
 
-## 4、代码运行
+> 获取 HuggingFace Token：访问 https://huggingface.co/settings/tokens 创建 Access Token
 
+---
+
+## 模型准备
+
+### 嵌入模型 & 重排模型（自动下载）
+
+运行以下脚本，自动从 HuggingFace 下载所需的嵌入和重排模型到 `./pre_train_model/` 目录：
+
+```bash
+python download_model.py
 ```
-# 运行RAG系统，并测试问答数据集
-python run.py
 
-# 样例测试，基于RAG的知识问答
+下载的模型包括：
+
+| 模型 | 用途 | 本地路径 |
+|------|------|---------|
+| `moka-ai/m3e-large` | M3E 稠密检索嵌入 | `./pre_train_model/m3e-large` |
+| `BAAI/bge-m3` | BGE 稠密检索嵌入 | `./pre_train_model/bge-m3` |
+| `InfiniFlow/bce-reranker-base_v1` | BCE 重排模型 | `./pre_train_model/bce-reranker-base_v1` |
+| `shibing624/text2vec-base-chinese` | 评估相似度模型 | `./pre_train_model/text2vec-base-chinese` |
+
+> 国内用户如遇下载困难，可使用 ModelScope 镜像或手动下载后放置到对应目录。
+
+### 大语言模型（LLM）
+
+根据使用模式选择：
+
+#### 方式 A：本地部署 HuggingFace 模型
+
+从 ModelScope 或 HuggingFace 下载模型到 `./models/` 目录：
+
+```bash
+# 以 Qwen2-7B-Instruct 为例（从 ModelScope 下载）
+pip install modelscope
+python -c "
+from modelscope import snapshot_download
+snapshot_download('qwen/Qwen2-7B-Instruct', local_dir='./models/Qwen2-7B-Instruct')
+"
+```
+
+支持的本地模型：
+
+| 模型名 | 参数 `--llm_name` | 本地路径 |
+|--------|------------------|---------|
+| Qwen2-7B-Instruct | `qwen2` | `./models/Qwen2-7B-Instruct` |
+| Baichuan2-7B-Chat | `baichuan2` | `./models/Baichuan2-7B-Chat` |
+| ChatGLM3-6B | `chatglm3` | `./models/chatglm3-6b` |
+
+#### 方式 B：HuggingFace Cloud API（无需 GPU）
+
+无需下载模型，配置 `.env` 中的 `HF_TOKEN` 后，直接使用 API 调用：
+
+```bash
+# 使用 Qwen3-9B API
+python run.py --llm_name "Qwen/Qwen3-9B"
+```
+
+---
+
+## 快速开始
+
+### 方式一：交互式问答（推荐入门）
+
+适合直接体验系统效果，输入问题即可获得答案：
+
+```bash
+# 使用本地 Qwen2 模型
 python example_test.py
 
-# 对RAG系统进行基准测试
-python model_server   # 启动大模型API服务
-python benchmark      # 大模型压力测试
+# 或修改 example_test.py 中的 model_name 参数后运行
 ```
 
-## 5、项目概述
+启动后进入交互模式：
 
-### 5.1 基于大模型的文档检索问答
-
-该项目主要以大模型为中心制作一个问答系统，回答用户的汽车相关问题。需要根据问题，在文档中定位相关信息的位置，并根据文档内容通过大模型生成相应的答案。本项目涉及的问题主要围绕汽车使用、维修、保养等方面，具体可参考下面的例子：
-
-```text
-问题1：怎么打开危险警告灯？
-答案1：危险警告灯开关在方向盘下方，按下开关即可打开危险警告灯。
-
-问题2：车辆如何保养？
-答案2：为了保持车辆处于最佳状态，建议您定期关注车辆状态，包括定期保养、洗车、内部清洁、外部清洁、轮胎的保养、低压蓄电池的保养等。
-
-问题3：靠背太热怎么办？
-答案3：您好，如果您的座椅靠背太热，可以尝试关闭座椅加热功能。在多媒体显示屏上依次点击空调开启按键→座椅→加热，在该界面下可以关闭座椅加热。
+```
+LLM model load ok
+Retriever load ok
+rerank model load ok
+请输入问题（输入 'exit' 退出）：吉利汽车如何开启自动驾驶功能？
+query:  吉利汽车如何开启自动驾驶功能？
+answer:  根据用户手册，开启自动驾驶功能需要...
+====================================================================================================
+请输入问题（输入 'exit' 退出）：exit
+退出程序。
 ```
 
-### 5.2 数据集
+### 方式二：批量测试集评估
 
-这里的训练数据集主要是一本汽车的用户手册（ pdf 文件）：
+对测试集进行批量问答并自动评分：
 
-![image](https://github.com/zhangzg1/rag_with_chat/blob/main/images/image_fChhMjnifo.png)
+```bash
+# 使用本地 Qwen2 + BCE 重排（默认配置）
+python run.py
 
-测试集问题示例：
+# 使用 BGE 重排
+python run.py --llm_name qwen2 --reranker_name bge
 
-```json
-{
-    "question": "自动模式下，中央显示屏是如何切换日间和夜间模式的？",
-    "answer_1": "",
-    "answer_2": "",
-    "answer_3": ""
-},
-{
-    "question": "如何通过中央显示屏进行副驾驶员座椅设置？",
-    "answer_1": "",
-    "answer_2": "",
-    "answer_3": ""
-}
+# 使用 HuggingFace API（无需 GPU）
+python run.py --llm_name "Qwen/Qwen3-9B"
+
+# 禁用 Prompt 增强（提速但可能影响效果）
+python run.py --prompt_enhance False
 ```
 
-## 6、项目流程
+---
 
-### 6.1 pdf 解析
+## 使用示例
 
-![image](https://github.com/zhangzg1/rag_with_chat/blob/main/images/image_RiYKWHwtQa.png)
+### 示例 1：基本问答
 
-对于 pdf 文件中这里类似的文本内容，该项目最终采用了三种解析方案的综合（具体代码[pdf_parse.py](https://github.com/zhangzg1/rag_with_chat/blob/main/pdf_parse.py)）：
+```python
+from huggingface_proxy import ChatGPTProxy
+from rerank_model import reRankLLM
+from retriever.m3e_retriever import M3eRetriever
+from retriever.bge_retriever import BgeRetriever
+from retriever.bm25_retriever import Bm25Retriever
+from retriever.tfidf_retriever import TfidfRetriever
+from generate_answer import get_emb_distribute_rerank
 
-- pdf 分块解析，尽量保证一个小标题 + 对应文档在一个文档块，其中文档块的长度分别是 512 和 1024。
+# 初始化模型（需要先准备好模型文件）
+llm = ChatGPTProxy(model="Qwen/Qwen3-9B")  # 或使用本地模型 ChatLLM("qwen2")
 
-- pdf 滑窗法解析，把文档句号分割，然后构建滑动窗口，其中文档块的长度分别是 256 和 512。
+m3e_retriever = M3eRetriever("./pre_train_model/m3e-large", pdf_path="./data/car_user_manual.pdf")
+bge_retriever = BgeRetriever("./pre_train_model/bge-m3", pdf_path="./data/car_user_manual.pdf")
+bm25 = Bm25Retriever(pdf_path="./data/car_user_manual.pdf")
+tfidf = TfidfRetriever(pdf_path="./data/car_user_manual.pdf")
+rerank = reRankLLM("bce")
 
-- pdf 非滑窗法解析，把文档句号分割，然后按照文档块预设尺寸均匀切分，其中文档块的长度分别是 256 和 512。
+# 提问
+query = "吉利汽车的语音助手如何唤醒？"
 
-按照这个三种解析方案对数据处理之后，然后对文档块做了一个去重，最后把这些文档块输入给召回模块。使用三种解析方法的综合，可以保证文本内容的完整性和跨页连续性。
+# 四路召回
+m3e_context = m3e_retriever.GetTopK(query, 15)
+bge_context = bge_retriever.GetTopK(query, 15)
+bm25_context = bm25.GetBM25TopK(query, 15)
+tfidf_context = tfidf.GetBM25TopK(query, 15)
 
-### 6.2 召回
+# 重排 + 生成答案
+prompt = get_emb_distribute_rerank(rerank, m3e_context, bge_context, bm25_context, tfidf_context, query)
+answer = llm.infer([prompt])
+print(answer[0])
+```
 
-召回主要使用 langchain 中的 retrievers 进行文本的召回。我们知道深度语义召回，侧重泛化性，字面召回，侧重关键词/实体的字面相关性，这两个召回方法也比较有代表性，因此选用了这两个召回方法。（具体代码[retriever](https://github.com/zhangzg1/rag_with_chat/tree/main/retriever)）
+### 示例 2：仅使用 API 模式（无 GPU 环境）
 
-1. 深度语义召回：这里我们使用了 m3e 召回和 bge 召回两种方法，m3e和bge都是文本嵌入模型，所以我们使用这两种模型分别将处理后的 pdf 文件转换成向量，最后都使用 faiss 向量数据库进行存储。
-2. 字面召回：这里我们使用了 BM25 召回和 TF-IDF 召回两种方法，它们通常用于计算两个文本，或者文本与文档之间的相关性。所以可以用于文本相似度计算和文本检索等应用场景。BM25 召回利用 LangChain 的 BM25Retrievers，TF-IDF 召回利用 LangChain 的TFIDFRetriever。
+```python
+import os
+os.environ["HF_TOKEN"] = "your_hf_token"  # 或在 .env 文件中配置
 
-### 6.3 重排序
+from huggingface_proxy import ChatGPTProxy
 
-Reranker 是信息检索生态系统中的一个重要组成部分，用于评估搜索结果，并进行重新排序，从而提升查询结果相关性。在 RAG 应用中，主要在拿到召回结果后使用 Reranker，能够更有效地确定文档和查询之间的语义相关性，更精细地对结果重排，最终提高搜索质量。将 Reranker 整合到 RAG 应用中可以显著提高生成答案的精确度，因为 Reranker 能够在单路或多路的召回结果中挑选出和问题最接近的文档。此外，扩大检索结果的丰富度（例如多路召回）配合精细化筛选最相关结果（Reranker）还能进一步提升最终结果质量。使用 Reranker 可以排除掉第一层召回中和问题关系不大的内容，将输入给大模型的上下文范围进一步缩小到最相关的一小部分文档中。通过缩短上下文， LLM 能够更“关注”上下文中的所有内容，避免忽略重点内容，还能节省推理成本。
+llm = ChatGPTProxy(model="Qwen/Qwen3-9B", temperature=0.1)
+results = llm.infer([
+    "吉利汽车发动机保养周期是多久？",
+    "如何更换吉利汽车轮胎？"
+])
+for r in results:
+    print(r)
+```
 
-![image](https://github.com/zhangzg1/rag_with_chat/blob/main/images/image_tL0rUhQiZB.png)
+### 示例 3：自定义 PDF 知识库
 
-上图为增加了 Reranker 的 RAG 应用架构。可以看出，这个检索系统包含两个阶段：
+替换 `./data/car_user_manual.pdf` 为你自己的 PDF 文件，修改运行参数：
 
-1. 在向量数据库中检索出 Top-K 相关文档，同时也可以配合 Sparse embedding（稀疏向量模型，例如TF-DF）覆盖全文检索能力
-2. Reranker 根据这些检索出来的文档与查询的相关性进行打分和重排。重排后挑选最靠前的结果作为 Prompt 中的 Context 传入 LLM，最终生成质量更高、相关性更强的答案。
+```bash
+python run.py \
+  --pdf_path ./data/my_manual.pdf \
+  --llm_name qwen2 \
+  --reranker_name bce \
+  --mutil_top_k 8 \
+  --single_max_length 5000
+```
 
-在该项目中。我们分别使用了 bge-reranker 和 bce-reranker-base_v1 模型对检索召回的文档进行重排。（具体代码[rerank_model.py](https://github.com/zhangzg1/rag_with_chat/blob/main/rerank_model.py)）
+---
 
-### 6.4 vllm 推理优化
+## 参数说明
 
-vLLM 是一个基于 Python 的 LLM 推理和服务框架，它的主要优势在于简单易用和性能高效。通过 PagedAttention 技术、连续批处理、CUDA 核心优化以及分布式推理支持，vLLM 能够显著提高 LLM 的推理速度，降低显存占用，更好地满足实际应用需求。vLLM 推理框架使大模型推理速度得到明显提升，推理速度比普通推理有 1 倍的加速。在产品级的部署上，vLLM 既能满足 batch 推理的要求，又能实现高并发下的 continuous batching，在实际产品部署中应用是非常广泛的。
+运行 `python run.py --help` 查看所有可用参数：
 
-在这个项目中，LLM 分别采用 ChatGLM3-6B，Qwen2-7B-Chat 和 Baichuan2-7B-Chat 作为大模型基座，并且都使用了vllm框架来进行加速推理优化。（具体代码[vllm_model.py](https://github.com/zhangzg1/rag_with_chat/blob/main/vllm_model.py)）
+| 参数 | 默认值 | 说明 |
+|------|--------|------|
+| `--llm_name` | `qwen2` | 使用的大语言模型，可选：`qwen2`、`baichuan2`、`chatglm3`、`Qwen/Qwen3-9B` |
+| `--reranker_name` | `bce` | 重排模型，可选：`bce`、`bge` |
+| `--prompt_enhance` | `True` | 是否启用 Prompt 增强（Query 扩展） |
+| `--single_max_length` | `4000` | 单路召回最大文本长度（字符数） |
+| `--single_top_k` | `6` | 单路召回返回的最大文档数 |
+| `--mutil_max_length` | `4000` | 多路召回重排后最大文本长度 |
+| `--mutil_top_k` | `6` | 多路召回重排后返回的最大文档数 |
+| `--pdf_path` | `./data/car_user_manual.pdf` | 知识库 PDF 文件路径 |
+| `--test_path` | `./data/test_question.json` | 测试问题集路径 |
+| `--predict_path` | `./data/result.json` | 预测结果输出路径 |
+| `--gold_path` | `./data/gold_result.json` | 标准答案路径 |
+| `--metric_path` | `./data/metrics.json` | 评估指标输出路径 |
+| `--m3e_embeddings_model` | `./pre_train_model/m3e-large` | M3E 嵌入模型路径 |
+| `--bge_embeddings_model` | `./pre_train_model/bge-m3` | BGE 嵌入模型路径 |
+| `--simModel_path` | `./pre_train_model/text2vec-base-chinese` | 评估相似度模型路径 |
+
+---
+
+## 评估指标
+
+系统使用以下综合评分方法（`test_score.py`）：
+
+```
+综合得分 = 0.5 × 语义相似度得分 + 0.5 × 关键词匹配得分
+```
+
+- **语义相似度**：使用 `text2vec-base-chinese` 计算预测答案与标准答案的余弦相似度
+- **关键词匹配**：Jaccard 相似度，衡量答案中关键词的覆盖率（阈值 0.3）
+- **无答案处理**：标准答案为"无答案"时，预测正确得满分 1.0，否则得 0 分
+
+评估结果保存至 `./data/metrics.json`，终端输出：
+
+```
+预测问题数：100, 预测最终得分：0.8523
+```
+
+---
+
+## Docker 部署
+
+```bash
+# 构建镜像
+docker build -t rag-with-chat .
+
+# 运行容器（挂载模型目录避免重复下载）
+docker run -it \
+  -v $(pwd)/models:/app/models \
+  -v $(pwd)/pre_train_model:/app/pre_train_model \
+  -v $(pwd)/data:/app/data \
+  -e HF_TOKEN=your_token \
+  --gpus all \
+  rag-with-chat
+
+# 自定义参数运行
+docker run -it --gpus all rag-with-chat \
+  python run.py --llm_name qwen2 --reranker_name bge
+```
+
+---
+
+## 项目结构
+
+```
+rag_with_chat/
+├── config.py                 # 全局配置（模型路径、设备设置）
+├── run.py                    # 主入口：命令行参数解析 + 批量评估
+├── example_test.py           # 交互式问答示例
+├── generate_answer.py        # 核心调度：召回 + 重排 + Prompt 构建 + LLM 推理
+├── hf_model.py               # 本地 HuggingFace LLM 推理模块
+├── huggingface_proxy.py      # HuggingFace API 代理模块
+├── rerank_model.py           # Cross-Encoder 重排模型
+├── pdf_parse.py              # PDF 解析（多策略 + 多粒度分块）
+├── test_score.py             # 评估指标计算
+├── download_model.py         # 自动下载嵌入/重排模型
+├── requirements.txt          # Python 依赖
+├── Dockerfile                # Docker 镜像配置
+│
+├── retriever/                # 四路检索器
+│   ├── m3e_retriever.py      # M3E 稠密向量检索
+│   ├── bge_retriever.py      # BGE 稠密向量检索
+│   ├── bm25_retriever.py     # BM25 稀疏检索
+│   └── tfidf_retriever.py    # TF-IDF 稀疏检索
+│
+├── data/                     # 数据目录
+│   ├── car_user_manual.pdf   # 吉利汽车用户手册
+│   ├── test_question.json    # 测试问题集
+│   ├── gold_result.json      # 标准答案
+│   └── result.json           # 预测结果（运行后生成）
+│
+├── models/                   # 本地 LLM 模型目录
+│   ├── Qwen2-7B-Instruct/
+│   ├── Baichuan2-7B-Chat/
+│   └── chatglm3-6b/
+│
+├── pre_train_model/          # 嵌入 & 重排模型目录
+│   ├── m3e-large/
+│   ├── bge-m3/
+│   ├── bge-reranker-large/
+│   ├── bce-reranker-base_v1/
+│   └── text2vec-base-chinese/
+│
+├── vector_db/                # 向量数据库缓存（运行后自动生成）
+│   ├── faiss_m3e_index/
+│   └── faiss_bge_index/
+│
+├── benchmark/                # 性能基准测试
+├── ARCHITECTURE.md           # 系统架构设计文档
+└── rag_architecture.html     # 可交互架构图
+```
+
+---
+
+## 常见问题
+
+**Q1: 运行时提示 `CUDA out of memory`**
+
+降低 batch size 或使用较小的模型，也可切换到 API 模式：
+```bash
+python run.py --llm_name "Qwen/Qwen3-9B"
+```
+
+**Q2: 下载模型速度慢或失败**
+
+国内用户推荐使用 ModelScope 镜像：
+```python
+import os
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
+# 然后再运行 download_model.py
+```
+
+**Q3: `ModuleNotFoundError: No module named 'dotenv'`**
+
+```bash
+pip install python-dotenv
+```
+
+**Q4: 向量数据库重建很慢**
+
+首次运行会构建 FAISS 向量索引，较为耗时（取决于 PDF 大小）。构建后会自动缓存到 `./vector_db/`，后续运行可通过 `--m3e_vector_path` 和 `--bge_vector_path` 参数复用缓存：
+```bash
+python run.py \
+  --m3e_vector_path ./vector_db/faiss_m3e_index \
+  --bge_vector_path ./vector_db/faiss_bge_index
+```
+（需要在 `run.py` 中取消对应参数的注释）
+
+**Q5: BM25 召回效果差**
+
+已知 Bug：`retriever/bm25_retriever.py` 第 55 行存在 `break` 语句，导致 BM25 只返回 1 条文档。可手动删除该 `break` 语句修复此问题。
+
+---
+
+## License
+
+本项目基于 [Apache License 2.0](LICENSE) 开源。
