@@ -1,0 +1,16 @@
+accelerate==0.29.3
+faiss-gpu
+jieba==0.42.1
+langchain
+langchain-community
+langchain-core
+modelscope==1.17.1
+pdfplumber==0.11.0
+PyPDF2==3.0.1
+rank-bm25==0.2.2
+sentence-transformers==2.7.0
+text2vec==1.2.9
+transformers==4.40.2
+#torch==2.1.2 根据CUDA版本选择合适的torch版本，安装命令可参考：https://pytorch.org/get-started/locally/
+openai>=1.0.0
+dotenv
