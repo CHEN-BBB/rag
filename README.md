@@ -88,8 +88,8 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/your-repo/rag_with_chat.git
-cd rag_with_chat
+git clone https://github.com/CHEN-BBB/rag.git
+cd rag
 ```
 
 ### 2. 创建虚拟环境（推荐）
