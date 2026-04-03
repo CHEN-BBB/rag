@@ -1,6 +1,6 @@
 from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
-from langchain_huggingface import HuggingFaceBgeEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from pdf_parse import DataProcess
 import torch
 import os
@@ -11,7 +11,7 @@ script_dir = os.path.dirname(__file__)
 # Sparse语义召回BGE-M3
 class BgeRetriever(object):
     def __init__(self, embeddings_model_path=None, data_path=None, vector_path=None, pdf_path=None):
-        self.embeddings = HuggingFaceBgeEmbeddings(
+        self.embeddings = HuggingFaceEmbeddings(
             model_name=embeddings_model_path,
             model_kwargs={"device": "cuda"},
             encode_kwargs={'normalize_embeddings': True}

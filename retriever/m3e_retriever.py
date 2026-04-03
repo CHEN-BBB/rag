@@ -1,6 +1,6 @@
 from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
-from langchain_huggingface import SentenceTransformerEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from pdf_parse import DataProcess
 import torch
 import os
@@ -11,7 +11,7 @@ script_dir = os.path.dirname(__file__)
 # Dense语义召回M3E
 class M3eRetriever(object):
     def __init__(self, embeddings_model_path=None, data_path=None, vector_path=None, pdf_path=None):
-        self.embeddings = SentenceTransformerEmbeddings(
+        self.embeddings = HuggingFaceEmbeddings(
             model_name=embeddings_model_path,
             model_kwargs={"device": "cuda"},
             encode_kwargs={"batch_size": 64}
