@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-class ChatGPTProxy():
+class HFProxy():
     def __init__(self, model="Qwen/Qwen2-7B-Instruct", temperature=0.1):
         self.model = model
         self.temperature = temperature
@@ -39,6 +39,6 @@ if __name__ == "__main__":
         "你会干什么",
         "推荐5本人工智能入门书籍"
     ]
-    llm = ChatGPTProxy()
+    llm = HFProxy()
     results = llm.infer(prompts)
     print(results)

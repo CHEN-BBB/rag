@@ -1,4 +1,4 @@
-from huggingface_proxy import ChatGPTProxy
+from huggingface_proxy import HFProxy
 from rerank_model import reRankLLM
 from hf_model import ChatLLM
 from retriever.m3e_retriever import M3eRetriever
@@ -7,8 +7,8 @@ from retriever.bm25_retriever import Bm25Retriever
 from retriever.tfidf_retriever import TfidfRetriever
 from generate_answer import get_emb_distribute_rerank
 
-
-def test_example(model_name="qwen2",
+# 测试示例，输入问题，输出答案
+def test_example(model_name="qwen2",#可选"Qwen/Qwen3.5-9B", "Qwen/Qwen3-9B"作为HFProxy模型的model参数
                  reranker_name="bce",
                  m3e_embeddings_model_path="./pre_train_model/m3e-large",
                  bge_embeddings_model_path="./pre_train_model/bge-m3",
@@ -19,8 +19,8 @@ def test_example(model_name="qwen2",
                  mutil_top_k=6):
 
     # 调用大模型
-    if "gpt" in model_name:
-        llm = ChatGPTProxy(model=model_name)
+    if "Qwen" in model_name:
+        llm = HFProxy(model=model_name)
     else:
         llm = ChatLLM(model_name)
     print("LLM model load ok")

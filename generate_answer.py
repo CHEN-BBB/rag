@@ -2,7 +2,7 @@ import json
 import time
 from tqdm import tqdm
 from hf_model import ChatLLM
-from huggingface_proxy import ChatGPTProxy
+from huggingface_proxy import HFProxy
 from rerank_model import reRankLLM
 from retriever.m3e_retriever import M3eRetriever
 from retriever.bge_retriever import BgeRetriever
@@ -10,7 +10,7 @@ from retriever.bm25_retriever import Bm25Retriever
 from retriever.tfidf_retriever import TfidfRetriever
 
 
-# 获取输入模版
+# 获取输入模版,输入模版包含已知信息和问题，其中已知信息是基于召回的文档构造的，问题是用户输入的问题，输出是一个字符串，字符串是一个提示模版，提示模版包含已知信息和问题，提示模版用于大模型生成答案
 def get_prompt_template(docs, query):
     prompt_template = """基于以下已知信息，简洁和专业的来回答用户的问题。]如果无法从中得到答案，请说"无答案" ，不允许在答案中添加编造成分，答案请使用中文。\n\
 已知内容为吉利控股集团汽车销售有限公司的吉利用户手册:\n{retriever_text}\n问题: {question}\n回答:""".format(
@@ -22,11 +22,13 @@ def get_prompt_template(docs, query):
 def get_emb_docs(m3e_context, query, max_length=4000, top_k=6):
     m3e_min_score = 0.0
     if (len(m3e_context) > 0):
+        # 获取召回文档中与query的最小距离分数
         m3e_min_score = m3e_context[0][1]
     cnt = 0
     emb_ans = ""
     for doc, score in m3e_context:
         cnt = cnt + 1
+        # 如果召回文档中与query的最小距离分数大于max_length，说明召回文档与query的相关性较低，可能无法提供有效的信息，此时可以选择不将召回文档作为已知信息输入到提示模版中，直接返回一个提示模版，提示模版中不包含已知信息，只包含问题，提示模版用于大模型生成答案
         if (len(emb_ans + doc.page_content) > max_length):
             break
         emb_ans = emb_ans + doc.page_content
@@ -59,8 +61,9 @@ def get_emb_distribute_rerank(rerank_model, m3e_context, bge_context, bm25_conte
         items.append(doc)
     for doc, score in bge_context:
         items.append(doc)
-    items.extend(bm25_context)
+    items.extend(bm25_context) # bm25和tfidf没有距离分数，直接将召回文档添加到items列表中
     items.extend(tfidf_context)
+    # 基于多路召回的文档构造一个提示模版,并返回重排后前top_k条文档构成的提示模版
     rerank_ans = rerank_model.predict(query, items)
     rerank_ans_k = rerank_ans[:top_k]
     rerank_text = ""
@@ -77,7 +80,7 @@ def question_test(model_name=None, reranker_name=None, m3e_embeddings_model_path
                   pdf_path=None, test_path=None, output_path=None, data_path=None, m3e_vector_path=None, prompt_enhance=True,
                   bge_vector_path=None, single_max_length=4000, single_top_k=6, mutil_max_length=4000, mutil_top_k=6):
     start = time.time()
-
+    # 初始化检索模型
     m3e_retriever = M3eRetriever(m3e_embeddings_model_path, data_path, m3e_vector_path, pdf_path)
     print("m3e_retriever load ok")
     bge_retriever = BgeRetriever(bge_embeddings_model_path, data_path, bge_vector_path, pdf_path)
@@ -89,7 +92,7 @@ def question_test(model_name=None, reranker_name=None, m3e_embeddings_model_path
 
     # LLM大模型
     if "Qwen" in model_name:
-        llm = ChatGPTProxy(model=model_name)
+        llm = HFProxy(model=model_name)
     else:
         llm = ChatLLM(model_name)
     print("llm load ok")
