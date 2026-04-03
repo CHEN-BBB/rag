@@ -9,7 +9,7 @@ LLM_DEVICE = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mp
 num_gpus = torch.cuda.device_count()
 
 # LLM模型路径
-Qwen2_path = './models/Qwen2-7B-Instruct'
+Qwen2_path = './models/Qwen2.5-7B-Instruct'
 Baichuan_path = './models/Baichuan2-7B-Chat'
 ChatGLM_path = './models/chatglm3-6b'
 
