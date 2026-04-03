@@ -1,6 +1,6 @@
 from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import SentenceTransformerEmbeddings
 from pdf_parse import DataProcess
 import torch
 import os
@@ -11,7 +11,7 @@ script_dir = os.path.dirname(__file__)
 # Dense语义召回M3E
 class M3eRetriever(object):
     def __init__(self, embeddings_model_path=None, data_path=None, vector_path=None, pdf_path=None):
-        self.embeddings = HuggingFaceEmbeddings(
+        self.embeddings = SentenceTransformerEmbeddings(
             model_name=embeddings_model_path,
             model_kwargs={"device": "cuda"},
             encode_kwargs={"batch_size": 64}
@@ -23,7 +23,7 @@ class M3eRetriever(object):
                 # 从pdf解析后的文本数据中处理得到文档对象列表，并构建faiss索引进行向量化存储
                 with open(data_path, "r", encoding="utf-8") as file:
                     docs = self.data_process(file)
-            if pdf_path is not None:
+            elif pdf_path is not None:
                 dp = DataProcess(pdf_path)
                 # pdf解析方法一，基于块的解析方法，块的定义是相邻文本行的字体大小相同，且块内文本行的字体大小与块外文本行的字体大小不同
                 dp.ParseBlock(max_seq=1024)

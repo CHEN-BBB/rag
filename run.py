@@ -7,7 +7,7 @@ from test_score import test_metrics
 parser = argparse.ArgumentParser(description='Intelligent Cabin Automotive Knowledge Q&A System')
 # 选择大语言模型
 parser.add_argument('--llm_name', default='qwen2', type=str,
-                    choices=['qwen2', 'baichuan2', 'chatglm3', "Qwen/Qwen3.5-9B", "Qwen/Qwen3-9B"],
+                    choices=['qwen2', 'baichuan2', 'chatglm3', "Qwen/Qwen3.5-27B", "Qwen/Qwen3.5-9B", "Qwen/Qwen3-9B"],
                     help='Select the Large Language Model for Generating Responses')
 # 选择重排序模型
 parser.add_argument('--reranker_name', default='bce', type=str, choices=['bce', 'bge'],

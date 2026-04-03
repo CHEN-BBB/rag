@@ -205,6 +205,8 @@ python run.py --llm_name "Qwen/Qwen3-9B"
 适合直接体验系统效果，输入问题即可获得答案：
 
 ```bash
+# all_text.txt 是 PDF 解析后的预处理文本文件，用于加速检索器的初始化。
+python generate_all_text.py
 # 使用本地 Qwen2 模型
 python example_test.py
 
@@ -466,9 +468,7 @@ python run.py \
 ```
 （需要在 `run.py` 中取消对应参数的注释）
 
-**Q5: BM25 召回效果差**
 
-已知 Bug：`retriever/bm25_retriever.py` 第 55 行存在 `break` 语句，导致 BM25 只返回 1 条文档。可手动删除该 `break` 语句修复此问题。
 
 ---
 

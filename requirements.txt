@@ -4,11 +4,14 @@ jieba
 langchain
 langchain-community
 langchain-core
+langchain-huggingface
 modelscope
 pdfplumber
 PyPDF2
 rank-bm25
 sentence-transformers
+sentencepiece 
+tiktoken
 text2vec
 transformers
 #torch==2.1.2 根据CUDA版本选择合适的torch版本，安装命令可参考：https://pytorch.org/get-started/locally/

@@ -12,7 +12,7 @@ class Bm25Retriever(object):
         if data_path is not None:
             with open(data_path, "r", encoding="utf-8") as file:
                 docs, full_docs = self.data_process(file)
-        if pdf_path is not None:
+        elif pdf_path is not None:
             dp = DataProcess(pdf_path)
             dp.ParseBlock(max_seq=1024)
             dp.ParseBlock(max_seq=512)
@@ -48,7 +48,7 @@ class Bm25Retriever(object):
     def GetBM25TopK(self, query, top_k):
         self.retriever.k = top_k
         query = " ".join(jieba.cut_for_search(query))
-        ans_docs = self.retriever.get_relevant_documents(query)
+        ans_docs = self.retriever.invoke(query)
         ans = []
         for line in ans_docs:
             ans.append(self.full_documents[line.metadata["id"]])

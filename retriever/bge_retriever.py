@@ -1,6 +1,6 @@
 from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceBgeEmbeddings
+from langchain_huggingface import HuggingFaceBgeEmbeddings
 from pdf_parse import DataProcess
 import torch
 import os
@@ -21,7 +21,7 @@ class BgeRetriever(object):
             if data_path is not None:
                 with open(data_path, "r", encoding="utf-8") as file:
                     docs = self.data_process(file)
-            if pdf_path is not None:
+            elif pdf_path is not None:
                 dp = DataProcess(pdf_path)
                 dp.ParseBlock(max_seq=1024)
                 dp.ParseBlock(max_seq=512)

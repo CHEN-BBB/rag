@@ -8,7 +8,8 @@ from retriever.tfidf_retriever import TfidfRetriever
 from generate_answer import get_emb_distribute_rerank
 
 # 测试示例，输入问题，输出答案
-def test_example(model_name="qwen2",#可选"Qwen/Qwen3.5-9B", "Qwen/Qwen3-9B"作为HFProxy模型的model参数
+def test_example(model_name="qwen2",
+                 #可选"Qwen/Qwen3.5-27B","Qwen/Qwen3.5-9B", "Qwen/Qwen3-9B"作为HFProxy模型的model参数
                  reranker_name="bce",
                  m3e_embeddings_model_path="./pre_train_model/m3e-large",
                  bge_embeddings_model_path="./pre_train_model/bge-m3",

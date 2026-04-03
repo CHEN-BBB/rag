@@ -1,0 +1,846 @@
+[
+  {
+    "question": "中国足球的队长是谁",
+    "answer_1": "无答案",
+    "answer_2": "无答案",
+    "answer_3": "无答案",
+    "answer_4": "无答案",
+    "answer_5": "无答案",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "新冠肺炎如何预防？",
+    "answer_1": "无答案",
+    "answer_2": "无答案",
+    "answer_3": "无答案",
+    "answer_4": "无答案",
+    "answer_5": "无答案",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "交通事故如何处理？",
+    "answer_1": "",
+    "answer_2": "",
+    "answer_3": "",
+    "answer_4": "",
+    "answer_5": ""
+  },
+  {
+    "question": "怎样加热座椅？",
+    "answer_1": "",
+    "answer_2": "",
+    "answer_3": "",
+    "answer_4": "",
+    "answer_5": ""
+  },
+  {
+    "question": "自动模式下，中央显示屏是如何切换日间和夜间模式的？",
+    "answer_1": "自动模式下，中央显示屏的切换方式如下：\n1. 日出到日落：白天显示日间模式，晚上显示夜间模式。\n2. 自定时段：依据设置的时间段切换显示模式。",
+    "answer_2": "在自动模式下，中央显示屏依据以下规则切换日间和夜间模式：\n1. **日出到日落**：白天显示日间模式，晚上显示夜间模式。\n2. **自定时段**：依据设置的时间段切换显示模式。",
+    "answer_3": "自动模式下，中央显示屏依据“日出到日落”（白天显示日间模式，晚上显示夜间模式）或“自定时段”（依据设置的时间段）自动切换日间或夜间模式。",
+    "answer_4": "",
+    "answer_5": ""
+  },
+  {
+    "question": "如何通过中央显示屏进行副驾驶员座椅设置？",
+    "answer_1": "",
+    "answer_2": "",
+    "answer_3": "",
+    "answer_4": "1. 在中央显示屏中点击“座舱体验 - 座椅”，进入座椅设置界面。\n2. 选择“副驾驶员座椅",
+    "answer_5": ""
+  },
+  {
+    "question": "副仪表台按钮如何操作中央显示屏？",
+    "answer_1": "",
+    "answer_2": "副仪表台按钮对中央显示屏的操作如下：\n\n1. **旋转按钮**：增加或减小音量。\n2. **按压按钮**：\n   - 短按：暂停或播放音乐/视频。\n   - 长按约 5 秒：进入锁屏/待机模式。\n   - 解锁：在锁屏模式下，点击中央显示屏任意位置或长按中控台按钮可重新解锁屏幕。",
+    "answer_3": "根据已知信息，副仪表台按钮操作中央显示屏的方法如下：\n\n1. **旋转按钮**：增加或减小音量。\n2. **按压按钮**：\n   - 短按：暂停或播放音乐/视频。\n   - 长按约 5 秒：进入锁屏/待机模式。\n   - 解锁：在锁屏模式下，点击中央显示屏任意位置或长按中控台按钮可重新解锁屏幕。",
+    "answer_4": "",
+    "answer_5": "副仪表台按钮对中央显示屏的操作如下：\n1. 旋转按钮：增加/减小音量。\n2. 按压按钮：短按暂停或播放音乐/视频；长按约 5 秒锁屏/待机模式。"
+  },
+  {
+    "question": "如何从锁定状态唤醒中央显示器?",
+    "answer_1": "",
+    "answer_2": "无答案",
+    "answer_3": "在锁屏模式下，点击中央显示屏上的任意位置或长按中控台按钮可以重新解锁屏幕。",
+    "answer_4": "无答案",
+    "answer_5": "无答案"
+  },
+  {
+    "question": "如何正确使用颈椎保护系统？",
+    "answer_1": "",
+    "answer_2": "",
+    "answer_3": "",
+    "answer_4": "",
+    "answer_5": "",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "前方交叉路口预警系统（FCTA）的作用是什么？",
+    "answer_1": "",
+    "answer_2": "当车速处于 4-15km/h 范围内，车辆驶出停车位或经过交叉路口时，若监测到存在前方侧向碰撞风险，系统将通過仪表提示信息和蜂鸣声提醒驾驶员注意观察前方道路情况，从而降低发生前方侧向碰撞的风险。",
+    "answer_3": "当车速处于 4-15km/h 范围内，车辆驶出停车位或经过交叉路口时，若 FCTA 监测到存在前方侧向碰撞风险，将通过仪表提示信息和蜂鸣声提醒驾驶员注意观察前方道路情况，从而降低发生前方侧向碰撞的风险。",
+    "answer_4": "",
+    "answer_5": ""
+  },
+  {
+    "question": "在使用FCTA时需要注意哪些事项？",
+    "answer_1": "",
+    "answer_2": "",
+    "answer_3": "",
+    "answer_4": "基于已知信息，使用 FCTA（前方交叉路口预警系统）时需注意以下事项：\n\n1.  **系统性质**：FCTA 属于驾驶辅助系统，不能确保在任何情况下正常工作，紧急情况时驾驶员应及时接管车辆。\n2.  **驾驶操作**：通过交叉路口或其他视线受阻环境前应环顾四周，确认周围环境无危险；当猛打方向盘或方向盘转角过大时，系统功能会被限制。\n3.  **识别局限**：系统主要对横穿的轿车/SUV、客车/卡车起作用，对三轮车、外表不规则的车辆、行人、骑行者、动物具有识别局限性。\n4.  **传感器限制**：若两侧前雷达被周围车辆或障碍物遮挡",
+    "answer_5": ""
+  },
+  {
+    "question": "如何打开车辆尾门？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在哪些情况下智能钥匙可能会受到干扰，导致功能异常？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "车辆尾门的防夹保护功能是如何工作的？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在操作电动后备厢时需要注意哪些事项？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何进入车辆功能界面？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在车辆功能界面有哪些操作选项？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "如何编辑快捷开关图标?",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何减少车辆腐蚀风险？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何通过空调系统面板调节空调风量？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何创建新的Lynk&CoID？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "什么是车主账户？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "如何创建人脸识别？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "如何添加亲情账号？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何开启或关闭用车偏好自动同步？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何熄火我的车辆？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何通过遥控钥匙启动车辆？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如果遥控钥匙电池电量低，我应该如何启动车辆？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何调节外后视镜？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "外部反光境显示物体距离是否准确?",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "什么是自动驻车系统？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在什么情况下会停用AutoHold并启用EPB功能？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "中央扶手箱的USB接口有几个？它们分别是什么类型？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "中央扶手箱所支持的U盘及数据传输格式有哪些？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何通过中央显示屏调节驾驶员侧座椅通风强度？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何关闭前排座行车通风功能？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何进入系统设置界面？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "在系统界面可以进行哪些操作？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "什么是无钥匙进入系统？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何设置无钥匙解锁模式？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "设置无钥匙解锁中单门和全车的区别在于什么？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "驾驶车辆时应遵守哪些注意事项？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何启用或停用手套箱密码保护功能？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "驾驶员状态监测系统是如何工作的？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "什么情况下会影响到驾驶员状态监测系统的工作？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何启用后排儿童锁功能？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "安全气囊是什么？它的作用是什么？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如果未使用或未正确使用安全带，会对安全气囊有何影响？ ",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在使用车辆时，有哪些安全气囊的注意事项？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何开启动力电池电量保持功能？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在开启动力电池的情况下，选择经济性优先和充电速度优先有什么区别？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "后方碰撞预警系统在什么情况下会启动？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何调整方向盘的位置？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "什么情况下不能调节车辆的方向盘？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何通过手机APP启动车辆？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "什么是陡坡缓降系统（HDC什么是陡坡缓降系统（HDC）？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "当坡度过大时，如何操作才能使车辆保持匀速地行驶？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在什么情况下HDC会激活？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "在什么情况下无法激活或自动退出HDC功能？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "开启陡坡缓降系统后，组合仪表显示什么颜色的指示灯？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "激活陡坡缓降系统时，组合仪表显示什么颜色的指示灯？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "当陡坡缓降系统出现故障时，组合仪表会显示怎样的提示？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "坡道辅助系统的主要功能是什么？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "使用坡道辅助系统时需要注意哪些警告？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在有路缘石的上坡和下坡驻车时，应如何操作？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "新车在最初的2000km行驶期间应遵守哪些事项？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "当刹车片将达到最小安全厚度时会有什么表现？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如果听到持续的高频尖锐噪声应该怎么做？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "风挡摄像头和前雷达在什么情况下会弹出警示消息？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何通过蓝牙钥匙启动车辆？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在什么情况下无法通过蓝牙钥匙启动车辆？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何通过网络远程启动发动机？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "变道辅助系统由哪三部分组成？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何检查制动液液位？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何调节车辆的背光亮度？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在白天和夜晚，开启和未开启整车背光联动时，转动调光旋钮有什么不同？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "当车辆发生故障时，应该如何处理？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "为什么不建议自行修理车辆故障？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "什么是能量回收系统？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何知道车辆正在进行能量回收？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "影响能量回收多少的因素有哪些？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "什么是智能远近光控制系统？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在什么情况下可以开启智能远近光控制系统？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "哪些因素可能导致智能远近光控制系统无法正常工作？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何启用前除霜/除雾功能？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "当我开启前挡风玻璃的去冰去雾模式时，车辆会有什么反应？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "为什么驾驶之前需要确保挡风玻璃无冰渣、积雪或冷凝水？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "什么情况下车辆需要进行报废处理？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "什么是遥控泊车（RPA）？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "使用Lynk&CoApp的RPA功能需要注意什么？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何开启方向盘助力与驾驶模式联动？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "有哪些可选的方向盘转向助力模式？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "主动式座舱清洁系统的作用是什么？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "全景天窗是由几部分组成的？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "如何使用位置记忆功能？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "如何更换后挡风玻璃雨刮片？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "在更换雨刮片时需要注意什么？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "如何添加香氛精油？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "我应该在哪里添加香氛精油？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_6": "无答案"
+  },
+  {
+    "question": "什么是转向助力系统？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "涉水行驶前应注意什么？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "涉水驾驶后需要进行哪些检查？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  },
+  {
+    "question": "什么时候应该为车辆打蜡？",
+    "answer_1": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_2": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_3": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_4": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}",
+    "answer_5": "请求失败: Error code: 400 - {'error': {'message': \"The requested model 'Qwen/Qwen3.5-9B' is not supported by any provider you have enabled.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}}"
+  }
+]
