@@ -55,6 +55,7 @@ class ChatLLM(object):
         batch_response = []
         for text in batch_text:
             inputs = self.tokenizer(text, return_tensors="pt").to(self.model.device)
+            input_length = inputs["input_ids"].shape[1]   # ← 记录输入 token 数
             
             with torch.no_grad():
                 output = self.model.generate(
@@ -69,10 +70,13 @@ class ChatLLM(object):
                     pad_token_id=self.tokenizer.pad_token_id
                 )
             
-            # 去除输入部分，只保留输出
-            output_str = self.tokenizer.decode(output[0], skip_special_tokens=True)
-            if text in output_str:
-                output_str = output_str[len(text):]
+            # # 去除输入部分，只保留输出
+            # output_str = self.tokenizer.decode(output[0], skip_special_tokens=True)
+            # if text in output_str:
+            #     output_str = output_str[len(text):]
+            # ✅ 只解码新生成的 token，跳过输入部分
+            new_tokens = output[0][input_length:]
+            output_str = self.tokenizer.decode(new_tokens, skip_special_tokens=True)
             
             batch_response.append(output_str.strip())
 
@@ -84,7 +88,7 @@ if __name__ == "__main__":
     model_name = "qwen2"
     start = time.time()
     llm = ChatLLM(model_name)
-    test = ["你好", "吉利汽车语音组手唤醒", "自动驾驶功能介绍"]
+    test = ["你好", "吉利汽车语音助手唤醒", "自动驾驶功能介绍"]
     generated_text = llm.infer(test)
     print(generated_text)
     end = time.time()

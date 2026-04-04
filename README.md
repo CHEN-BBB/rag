@@ -171,11 +171,11 @@ python download_model.py
 从 ModelScope 或 HuggingFace 下载模型到 `./models/` 目录：
 
 ```bash
-# 以 Qwen2-7B-Instruct 为例（从 ModelScope 下载）
+# 以 Qwen2.5-7B-Instruct 为例（从 ModelScope 下载）
 pip install modelscope
 python -c "
 from modelscope import snapshot_download
-snapshot_download('qwen/Qwen2-7B-Instruct', local_dir='./models/Qwen2-7B-Instruct')
+snapshot_download('qwen/Qwen2.5-7B-Instruct', local_dir='./models/Qwen2.5-7B-Instruct')
 "
 ```
 
@@ -183,7 +183,7 @@ snapshot_download('qwen/Qwen2-7B-Instruct', local_dir='./models/Qwen2-7B-Instruc
 
 | 模型名 | 参数 `--llm_name` | 本地路径 |
 |--------|------------------|---------|
-| Qwen2-7B-Instruct | `qwen2` | `./models/Qwen2-7B-Instruct` |
+| Qwen2.5-7B-Instruct | `qwen2` | `./models/Qwen2.5-7B-Instruct` |
 | Baichuan2-7B-Chat | `baichuan2` | `./models/Baichuan2-7B-Chat` |
 | ChatGLM3-6B | `chatglm3` | `./models/chatglm3-6b` |
 
@@ -193,7 +193,7 @@ snapshot_download('qwen/Qwen2-7B-Instruct', local_dir='./models/Qwen2-7B-Instruc
 
 ```bash
 # 使用 Qwen3-9B API
-python run.py --llm_name "Qwen/Qwen3-9B"
+python run.py --llm_name "Qwen/Qwen3.5-9B"
 ```
 
 ---
@@ -267,7 +267,7 @@ from retriever.tfidf_retriever import TfidfRetriever
 from generate_answer import get_emb_distribute_rerank
 
 # 初始化模型（需要先准备好模型文件）
-llm = ChatGPTProxy(model="Qwen/Qwen3-9B")  # 或使用本地模型 ChatLLM("qwen2")
+llm = ChatGPTProxy(model="Qwen/Qwen3.5-9B")  # 或使用本地模型 ChatLLM("qwen2")
 
 m3e_retriever = M3eRetriever("./pre_train_model/m3e-large", pdf_path="./data/car_user_manual.pdf")
 bge_retriever = BgeRetriever("./pre_train_model/bge-m3", pdf_path="./data/car_user_manual.pdf")
@@ -298,7 +298,7 @@ os.environ["HF_TOKEN"] = "your_hf_token"  # 或在 .env 文件中配置
 
 from huggingface_proxy import ChatGPTProxy
 
-llm = ChatGPTProxy(model="Qwen/Qwen3-9B", temperature=0.1)
+llm = ChatGPTProxy(model="Qwen/Qwen3.5-9B", temperature=0.1)
 results = llm.infer([
     "吉利汽车发动机保养周期是多久？",
     "如何更换吉利汽车轮胎？"
@@ -361,7 +361,7 @@ python run.py \
 评估结果保存至 `./data/metrics.json`，终端输出：
 
 ```
-预测问题数：100, 预测最终得分：0.8523
+预测问题数：103, 预测最终得分：0.9357
 ```
 
 ---
@@ -446,7 +446,7 @@ rag_with_chat/
 
 降低 batch size 或使用较小的模型，也可切换到 API 模式：
 ```bash
-python run.py --llm_name "Qwen/Qwen3-9B"
+python run.py --llm_name "Qwen/Qwen3.5-9B"
 ```
 
 **Q2: 下载模型速度慢或失败**
@@ -458,7 +458,7 @@ os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 # 然后再运行 download_model.py
 ```
 
-**Q3: `ModuleNotFoundError: No module named 'dotenv'`**
+**Q3: ModuleNotFoundError: No module named 'dotenv'**
 
 ```bash
 pip install python-dotenv

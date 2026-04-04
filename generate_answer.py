@@ -75,6 +75,13 @@ def get_emb_distribute_rerank(rerank_model, m3e_context, bge_context, bm25_conte
     return mutil_rerank_prompt_template
 
 
+# 如果输出内容超长（>500字）或包含Prompt关键词，认为是输出异常
+def clean_answer(answer):
+    if len(answer) > 500 or "基于以下已知信息" in answer or "You are a helpful assistant" in answer:
+        return "无答案"
+    return answer
+
+
 # 对测试数据集进行rag评测
 def question_test(model_name=None, reranker_name=None, m3e_embeddings_model_path=None, bge_embeddings_model_path=None,
                   pdf_path=None, test_path=None, output_path=None, data_path=None, m3e_vector_path=None, prompt_enhance=True,
@@ -139,11 +146,11 @@ def question_test(model_name=None, reranker_name=None, m3e_embeddings_model_path
             batch_input.append(tfidf_inputs)
             # 执行batch推理
             batch_output = llm.infer(batch_input)
-            line["answer_1"] = batch_output[0]     # 多路召回重排序后的结果
-            line["answer_2"] = batch_output[1]     # m3e召回的结果
-            line["answer_3"] = batch_output[2]     # bge召回的结果
-            line["answer_4"] = batch_output[3]     # bm25召回的结果
-            line["answer_5"] = batch_output[4]     # tfidf召回结果
+            line["answer_1"] = clean_answer(batch_output[0])     # 多路召回重排序后的结果
+            line["answer_2"] = clean_answer(batch_output[1])     # m3e召回的结果
+            line["answer_3"] = clean_answer(batch_output[2])     # bge召回的结果
+            line["answer_4"] = clean_answer(batch_output[3])     # bm25召回的结果
+            line["answer_5"] = clean_answer(batch_output[4])     # tfidf召回结果
 
             # 如果m3e或bge检索跟query的距离高于500，输出无答案
             if m3e_min_score > 500:
