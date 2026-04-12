@@ -34,7 +34,7 @@
 
 | 模型 | 类型 | 参数量 | 部署方式 |
 |------|------|--------|----------|
-| Qwen2-7B-Instruct | 本地 HF | 7B | `hf_model.ChatLLM` |
+| Qwen2.5-7B-Instruct | 本地 HF | 7B | `hf_model.ChatLLM` |
 | Baichuan2-7B-Chat | 本地 HF | 7B | `hf_model.ChatLLM` |
 | ChatGLM3-6B | 本地 HF | 6B | `hf_model.ChatLLM` |
 | Qwen3-9B / Qwen3.5-9B | 云端 API | 9B | `huggingface_proxy.ChatGPTProxy` |
@@ -81,16 +81,21 @@
 EMBEDDING_DEVICE = "cuda" if cuda else "mps" if mps else "cpu"
 LLM_DEVICE       = "cuda" if cuda else "mps" if mps else "cpu"
 
-# 模型路径
-Qwen2_path      = './models/Qwen2-7B-Instruct'
-Baichuan_path   = './models/Baichuan2-7B-Chat'
-ChatGLM_path    = './models/chatglm3-6b'
+# LLM模型路径
+Qwen2_path = './models/Qwen2.5-7B-Instruct'
+Baichuan_path = './models/Baichuan2-7B-Chat'
+ChatGLM_path = './models/chatglm3-6b'
 
+# 召回模型路径
 M3E_embeddings_model_path = "./pre_train_model/m3e-large"
 BGE_embeddings_model_path = "./pre_train_model/bge-m3"
-BGE_reranker_model        = "./pre_train_model/bge-reranker-large"
-BCE_reranker_model        = "./pre_train_model/bce-reranker-base_v1"
-SimModel_path             = './pre_train_model/text2vec-base-chinese'
+
+# 重排模型路径
+BGE_reranker_model = "./pre_train_model/bge-reranker-large"
+BCE_reranker_model = "./pre_train_model/bce-reranker-base_v1"
+
+# 相似度模型
+SimModel_path = './pre_train_model/text2vec-base-chinese'
 ```
 
 ---
@@ -156,7 +161,7 @@ jieba.cut_for_search(text) → tokens
 BM25Retriever.from_documents(docs)
 → get_relevant_documents(query)  # 关键词精确匹配
 ```
-> ⚠️ **已知问题**：`GetBM25TopK` 内有 `break`，实际只返回1条文档
+
 
 **TF-IDF Retriever** (`tfidf_retriever.py`)
 ```python
@@ -539,21 +544,12 @@ docker run --gpus all rag_with_chat:latest python run.py
 
 ---
 
-## 8. 已知问题与优化建议
-
-### 8.1 已知 Bug
-
-| 文件 | 问题 | 影响 | 建议修复 |
-|------|------|------|----------|
-| `retriever/bm25_retriever.py` | `GetBM25TopK` 内有 `break`，只返回1条文档 | BM25 实际召回效果被严重削弱 | 删除 `break` 语句 |
-| `example_test.py` | API 模型判断用 `"gpt" in model_name`，但实际使用 `"Qwen"` 判断 | 交互测试与批量测试行为不一致 | 统一判断逻辑 |
-
-### 8.2 优化建议
+## 8. 优化建议
 
 #### 性能优化
 - **向量库构建**：4个检索器都分别调用 PDF 解析，重复解析4次。建议先解析一次，将数据共享给所有检索器。
 - **批量向量化**：M3E 已设置 `batch_size=64`，BGE 未设置，可补充提升速度。
-- **vLLM 加速**：集成 vLLM 框架可获得约 1 倍推理速度提升（项目 README 提及，对应 `vllm_model.py`，已被删除，可补充）。
+- **vLLM 加速**：集成 vLLM 框架可获得约 1 倍推理速度提升。
 
 #### 效果优化
 - **BM25 召回数量修复**：修复 `break` 问题，让 BM25 真正参与多路融合。

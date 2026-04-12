@@ -22,7 +22,7 @@ class ChatRequest(BaseModel):
 
 
 # 全局变量
-model_path = "../models/Qwen2-7B-Instruct"
+model_path = "../models/Qwen2.5-7B-Instruct"
 model = None
 tokenizer = None
 
