@@ -7,7 +7,7 @@ load_dotenv()
 
 
 class HFProxy():
-    def __init__(self, model="Qwen/Qwen2-7B-Instruct", temperature=0.1):
+    def __init__(self, model="Qwen/Qwen3.5-9B", temperature=0.1):
         self.model = model
         self.temperature = temperature
         self.client = OpenAI(
