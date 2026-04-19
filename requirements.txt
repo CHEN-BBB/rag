@@ -5,6 +5,7 @@ langchain
 langchain-community
 langchain-core
 langchain-huggingface
+ipywidgets
 modelscope
 pdfplumber
 PyPDF2
