@@ -12,6 +12,9 @@ parser.add_argument('--llm_name', default='qwen2', type=str,
 # 选择重排序模型
 parser.add_argument('--reranker_name', default='bce', type=str, choices=['bce', 'bge'],
                     help='Select the reranking model used for reordering the retrieved documents')
+# 选择是否使用重排序模型
+parser.add_argument('--use_rerank', default=True, type=lambda x: x.lower() != 'false',
+                    help='Whether to use reranking model')
 # 选择文本嵌入模型
 parser.add_argument('--m3e_embeddings_model', default=M3E_embeddings_model_path, type=str,
                     help='The path to the text embedding model for recall used by M3E')
@@ -19,7 +22,7 @@ parser.add_argument('--m3e_embeddings_model', default=M3E_embeddings_model_path,
 parser.add_argument('--bge_embeddings_model', default=BGE_embeddings_model_path, type=str,
                     help='The path to the text embedding model for recall used by BGE')
 # 选择是否进行提示词优化
-parser.add_argument('--prompt_enhance', default=True, type=str,
+parser.add_argument('--prompt_enhance', default=True, type=lambda x: x.lower() != 'false',
                     help='Choose to optimize the prompt')
 # 选择单路径召回的最大文本长度
 parser.add_argument('--single_max_length', default=4000, type=int,
@@ -70,6 +73,7 @@ if __name__ == '__main__':
     question_test(
         model_name=args.llm_name,
         reranker_name=args.reranker_name,
+        use_rerank=args.use_rerank,
         m3e_embeddings_model_path=args.m3e_embeddings_model,
         bge_embeddings_model_path=args.bge_embeddings_model,
         test_path=args.test_path,

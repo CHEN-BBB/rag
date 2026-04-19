@@ -75,6 +75,33 @@ def get_emb_distribute_rerank(rerank_model, m3e_context, bge_context, bm25_conte
     return mutil_rerank_prompt_template
 
 
+# 基于多路召回的文档构造一个提示模版,并返回前top_k条文档构成的提示模版，m3e和bge召回的文档都有距离分数，bm25和tfidf没有距离分数，直接返回提示模版
+def get_emb_distribute_no_rerank(m3e_context, bge_context, bm25_context, tfidf_context, query, mutil_max_length=4000, mutil_top_k=6):
+    items = []
+    for doc, score in m3e_context:
+        items.append(doc)
+    for doc, score in bge_context:
+        items.append(doc)
+    items.extend(bm25_context) # bm25和tfidf没有距离分数，直接将召回文档添加到items列表中
+    items.extend(tfidf_context)
+    # 去重（按 page_content）
+    seen = set()
+    unique_docs = []
+    for doc in items:
+        if doc.page_content not in seen:
+            seen.add(doc.page_content)
+            unique_docs.append(doc)
+
+    # 截取 top_k，拼成 prompt
+    merge_text = ""
+    for doc in unique_docs[:mutil_top_k]:
+        if len(merge_text + doc.page_content) > mutil_max_length:
+            break
+        merge_text += doc.page_content
+    no_rerank_prompt_template = get_prompt_template(merge_text, query)
+    return no_rerank_prompt_template
+
+
 # 如果输出内容超长（>500字）或包含Prompt关键词，认为是输出异常
 def clean_answer(answer):
     if len(answer) > 500 or "基于以下已知信息" in answer or "You are a helpful assistant" in answer:
@@ -83,7 +110,7 @@ def clean_answer(answer):
 
 
 # 对测试数据集进行rag评测
-def question_test(model_name=None, reranker_name=None, m3e_embeddings_model_path=None, bge_embeddings_model_path=None,
+def question_test(model_name=None, reranker_name=None, use_rerank=True, m3e_embeddings_model_path=None, bge_embeddings_model_path=None,
                   pdf_path=None, test_path=None, output_path=None, data_path=None, m3e_vector_path=None, prompt_enhance=True,
                   bge_vector_path=None, single_max_length=4000, single_top_k=6, mutil_max_length=4000, mutil_top_k=6):
     start = time.time()
@@ -98,17 +125,20 @@ def question_test(model_name=None, reranker_name=None, m3e_embeddings_model_path
     print("tf-idf load ok")
 
     # LLM大模型
-    if "Qwen" in model_name:
+    if model_name and "Qwen" in model_name:
         llm = HFProxy(model=model_name)
     else:
         llm = ChatLLM(model_name)
     print("llm load ok")
 
     # reRank模型
-    rerank = reRankLLM(reranker_name)
-    print("rerank model load ok")
+    if (use_rerank):
+        rerank = reRankLLM(reranker_name)
+        print("rerank model load ok")
 
     # 对每一条测试问题，做答案生成处理
+    if test_path is None or output_path is None:
+        raise ValueError("test_path and output_path must be provided")
     with open(test_path, "r", encoding="utf-8") as file:
         jdata = json.loads(file.read())
         print(len(jdata))
@@ -133,9 +163,13 @@ def question_test(model_name=None, reranker_name=None, m3e_embeddings_model_path
                                                      top_k=single_top_k)
             bm25_inputs = get_distribute_docs(bm25_context, query, max_length=single_max_length, top_k=single_top_k)
             tfidf_inputs = get_distribute_docs(tfidf_context, query, max_length=single_max_length, top_k=single_top_k)
-            mutil_rerank_inputs = get_emb_distribute_rerank(rerank, m3e_context, bge_context, bm25_context,
+            if (use_rerank):
+                mutil_rerank_inputs = get_emb_distribute_rerank(rerank, m3e_context, bge_context, bm25_context,
                                                             tfidf_context, query, max_length=mutil_max_length,
                                                             top_k=mutil_top_k)
+            else:
+                mutil_rerank_inputs = get_emb_distribute_no_rerank(m3e_context, bge_context, bm25_context,
+                                                            tfidf_context, query, mutil_max_length, mutil_top_k)
 
             # 基于同一个问题构建一组batch
             batch_input = []
