@@ -330,6 +330,7 @@ python run.py \
 |------|--------|------|
 | `--llm_name` | `qwen2` | 使用的大语言模型，可选：`qwen2`、`baichuan2`、`chatglm3`、`Qwen/Qwen3-9B` |
 | `--reranker_name` | `bce` | 重排模型，可选：`bce`、`bge` |
+|`--use_rerank`|`True`|选择是否使用重排序模型
 | `--prompt_enhance` | `True` | 是否启用 Prompt 增强（Query 扩展） |
 | `--single_max_length` | `4000` | 单路召回最大文本长度（字符数） |
 | `--single_top_k` | `6` | 单路召回返回的最大文档数 |
@@ -363,6 +364,11 @@ python run.py \
 ```
 预测问题数：103, 预测最终得分：0.9357
 ```
+消融实验（当不使用rerank时）：
+```
+预测问题数：103, 预测最终得分：0.8754
+```
+实验可得rerank将指标提升0.06（6%）
 
 ---
 
